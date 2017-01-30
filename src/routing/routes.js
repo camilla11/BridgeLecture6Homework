@@ -1,12 +1,12 @@
 import React from 'react';
 import {Router, Route, hashHistory} from 'react-router';
 import App from '../containers/App/App';
-import Movies from '../containers/Movies/Movies';
+import MovieDetails from '../containers/MovieDetails/MovieDetails';
 
 const Routes = () =>(
     <Router history={hashHistory}>
       <Route path="/" component={App} />
-
+      <Route name="movieDetails" path="movieDetails/:title" component={MovieDetails}/>
     </Router>
 )
 
